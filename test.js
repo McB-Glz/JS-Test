@@ -144,3 +144,17 @@ function compression(str) {
 }
 
 console.log(compression('aabcccccaaa'));
+
+/*
+
+4. Write a function that combines two arrays by alternatingly taking their elements in, e.g. [x,y,z], [10,20,30] prints
+[x,10,y,20,z,30] .
+
+*/
+
+var array1 = ['x','y','z'];
+var array2 = [10,20,30];
+
+var arrayCombined = array1.map(function(item, index) { return [item, array2[index]]; });
+
+alert(arrayCombined);

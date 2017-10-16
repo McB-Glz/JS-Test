@@ -39,3 +39,6 @@ Prints: DXII
 3. Write a function to perform basic string compression using the counts of repeated characters; e.g "aabcccccaaa"
 would become "a2b1c5a3" . If the compressed string would not become smaller than the original string, just print the
 original string.
+
+4. Write a function that combines two arrays by alternatingly taking their elements in, e.g. [x,y,z], [10,20,30] prints
+[x,10,y,20,z,30] .
