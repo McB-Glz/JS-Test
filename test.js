@@ -101,3 +101,46 @@ function getRomanNumeral (num) {
 }
 
 console.log(getRomanNumeral(512));
+
+/*
+
+3. Write a function to perform basic string compression using the counts of repeated characters; e.g "aabcccccaaa"
+would become "a2b1c5a3" . If the compressed string would not become smaller than the original string, just print the
+original string.
+
+*/
+
+function compression(str) {
+
+    var count = 1;
+    var previousChar = str.charAt(0);
+    var compressedStr = '';
+    var strLength = str.length;
+    
+    for (var i = 1; i < strLength; i++) {
+        var currentChar = str[i];
+        if(previousChar === currentChar) {
+            count++;
+        } else if (count === 1) {
+            compressedStr += previousChar + count;
+            previousChar = currentChar;
+        } else {
+            compressedStr += previousChar + count;
+            previousChar = currentChar;
+            count = 1;
+        }
+    }
+
+    if (count === 1) {
+        compressedStr += currentChar;
+    } else {
+        compressedStr += currentChar + count;
+    }
+    if (compressedStr.length > str.length) {
+    	return str;
+    } else {
+    	return compressedStr;
+    }
+}
+
+console.log(compression('aabcccccaaa'));
