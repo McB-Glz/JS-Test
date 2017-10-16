@@ -24,3 +24,13 @@ out.
  [0, 0, 0],</br>
  [7, 0, 9]</br>
 ]
+
+
+2. Write a function that convert the given number into a Roman Numeral - The function needs to receive a Number and
+Return a String (The Number can be between 1 and 3999)
+
+Example:
+
+getRomanNumeral(512);
+
+Prints: DXII
