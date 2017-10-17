@@ -158,3 +158,24 @@ var array2 = [10,20,30];
 var arrayCombined = array1.map(function(item, index) { return [item, array2[index]]; });
 
 alert(arrayCombined);
+
+
+/*
+
+5. Write a function that receives a matrix and returns its transposed one.
+
+*/
+
+var matrix = [
+    [1,2,3],
+    [1,2,3],
+    [1,2,3]
+];
+
+var transposedMatrix = matrix[0].map(function(col, i) { 
+  return matrix.map(function(row) { 
+    return row[i] 
+  })
+});
+
+console.log(transposedMatrix);

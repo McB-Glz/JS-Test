@@ -42,3 +42,5 @@ original string.
 
 4. Write a function that combines two arrays by alternatingly taking their elements in, e.g. [x,y,z], [10,20,30] prints
 [x,10,y,20,z,30] .
+
+5. Write a function that receives a matrix and returns its transposed one.
